@@ -4,22 +4,23 @@
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-37%20passed-brightgreen)]()
+[![Tests](https://img.shields.io/badge/tests-52%20passed-brightgreen)]()
 [![PyPI](https://img.shields.io/badge/PyPI-coming%20soon-orange)]()
 
 `engcalc` is a pure-Python library for common Mechanical Engineering
-calculations — thermodynamics, fluid mechanics, and heat transfer.
-Designed for students, engineers, and researchers who want clean,
-tested formulas without the spreadsheet mess.
+calculations — thermodynamics, fluid mechanics, heat transfer, and
+material properties. Designed for students, engineers, and researchers
+who want clean, tested formulas without the spreadsheet mess.
 
 ## Features
 
 - **Thermodynamics** — ideal gas law, Carnot, Otto, Diesel, Brayton cycles
 - **Fluid Mechanics** — Reynolds number, Bernoulli, Darcy-Weisbach, pump power
 - **Heat Transfer** — conduction, convection, radiation, LMTD
+- **Materials Database** — 10 common engineering materials (steel, aluminum, copper, titanium, cast iron) with 8 properties each
 - **SI units** throughout — no unit confusion
 - **Zero heavy dependencies** — only NumPy
-- **Fully type-hinted** and tested (37 tests passing)
+- **Fully type-hinted** and tested (52 tests passing)
 
 ## Installation
 
@@ -38,7 +39,7 @@ pip install -e .
 ## Quick Start
 
 ```python
-from engcalc import ideal_gas, cycles, fluids, heat
+from engcalc import ideal_gas, cycles, fluids, heat, materials
 
 # Ideal gas law: PV = nRT
 P = ideal_gas.pressure(n=1, T=300, V=0.024)
@@ -55,6 +56,10 @@ print(f"Re = {Re:.0f} → {fluids.flow_regime(Re)}")   # 100000 → turbulent
 # Heat conduction through a wall
 Q = heat.conduction_rate(k=50, A=2, dT=100, L=0.1)
 print(f"Heat rate: {Q:.2f} W")            # 100000.00 W
+
+# Material property lookup
+rho = materials.get("steel_AISI_1040", "density")
+print(f"Steel density: {rho} kg/m^3")     # 7850 kg/m^3
 ```
 
 ## Modules
@@ -65,6 +70,7 @@ print(f"Heat rate: {Q:.2f} W")            # 100000.00 W
 | `engcalc.cycles` | `carnot_efficiency`, `otto_efficiency`, `diesel_efficiency`, `brayton_efficiency` | Thermodynamic cycle efficiencies |
 | `engcalc.fluids` | `reynolds_number`, `flow_regime`, `bernoulli_pressure`, `darcy_weisbach_head_loss`, `pump_power` | Fluid mechanics |
 | `engcalc.heat` | `conduction_rate`, `convection_rate`, `radiation_rate`, `lmtd` | Heat transfer |
+| `engcalc.materials` | `get`, `get_all`, `list_materials`, `search`, `list_categories` | Material property database |
 
 ## Examples
 
@@ -74,6 +80,7 @@ Check the [`examples/`](examples/) folder for complete demo scripts:
 - `examples/cycles_demo.py` — Thermodynamic cycles
 - `examples/fluids_demo.py` — Fluid mechanics
 - `examples/heat_demo.py` — Heat transfer
+- `examples/materials_demo.py` — Materials database
 
 Run any demo:
 
@@ -116,7 +123,7 @@ calculation, feel free to:
 - [x] Thermodynamics (ideal gas, cycles)
 - [x] Fluid mechanics
 - [x] Heat transfer
-- [ ] Materials database
+- [x] Materials database
 - [ ] Unit conversion utilities
 - [ ] Mechanics of materials (stress, strain, beam)
 - [ ] Publish to PyPI
