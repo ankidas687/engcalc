@@ -1,0 +1,122 @@
+{
+  "steel_AISI_1018": {
+    "name": "AISI 1018 Carbon Steel",
+    "category": "steel",
+    "density": 7870,
+    "youngs_modulus": 205e9,
+    "poisson_ratio": 0.29,
+    "thermal_conductivity": 51.9,
+    "specific_heat": 486,
+    "thermal_expansion": 11.7e-6,
+    "yield_strength": 370e6,
+    "ultimate_strength": 440e6
+  },
+  "steel_AISI_1040": {
+    "name": "AISI 1040 Carbon Steel",
+    "category": "steel",
+    "density": 7850,
+    "youngs_modulus": 200e9,
+    "poisson_ratio": 0.29,
+    "thermal_conductivity": 50.7,
+    "specific_heat": 490,
+    "thermal_expansion": 11.3e-6,
+    "yield_strength": 415e6,
+    "ultimate_strength": 620e6
+  },
+  "steel_AISI_4140": {
+    "name": "AISI 4140 Alloy Steel",
+    "category": "steel",
+    "density": 7850,
+    "youngs_modulus": 205e9,
+    "poisson_ratio": 0.29,
+    "thermal_conductivity": 42.6,
+    "specific_heat": 473,
+    "thermal_expansion": 12.2e-6,
+    "yield_strength": 655e6,
+    "ultimate_strength": 1020e6
+  },
+  "steel_SS_304": {
+    "name": "Stainless Steel 304",
+    "category": "steel",
+    "density": 8000,
+    "youngs_modulus": 193e9,
+    "poisson_ratio": 0.29,
+    "thermal_conductivity": 16.2,
+    "specific_heat": 500,
+    "thermal_expansion": 17.3e-6,
+    "yield_strength": 215e6,
+    "ultimate_strength": 505e6
+  },
+  "steel_SS_316": {
+    "name": "Stainless Steel 316",
+    "category": "steel",
+    "density": 8000,
+    "youngs_modulus": 193e9,
+    "poisson_ratio": 0.27,
+    "thermal_conductivity": 16.3,
+    "specific_heat": 500,
+    "thermal_expansion": 16.0e-6,
+    "yield_strength": 205e6,
+    "ultimate_strength": 515e6
+  },
+  "aluminum_6061_T6": {
+    "name": "Aluminum 6061-T6",
+    "category": "aluminum",
+    "density": 2700,
+    "youngs_modulus": 68.9e9,
+    "poisson_ratio": 0.33,
+    "thermal_conductivity": 167,
+    "specific_heat": 896,
+    "thermal_expansion": 23.6e-6,
+    "yield_strength": 276e6,
+    "ultimate_strength": 310e6
+  },
+  "aluminum_7075_T6": {
+    "name": "Aluminum 7075-T6",
+    "category": "aluminum",
+    "density": 2810,
+    "youngs_modulus": 71.7e9,
+    "poisson_ratio": 0.33,
+    "thermal_conductivity": 130,
+    "specific_heat": 960,
+    "thermal_expansion": 23.6e-6,
+    "yield_strength": 503e6,
+    "ultimate_strength": 572e6
+  },
+  "copper_C11000": {
+    "name": "Copper C11000 (ETP)",
+    "category": "copper",
+    "density": 8940,
+    "youngs_modulus": 117e9,
+    "poisson_ratio": 0.34,
+    "thermal_conductivity": 401,
+    "specific_heat": 385,
+    "thermal_expansion": 17.0e-6,
+    "yield_strength": 69e6,
+    "ultimate_strength": 220e6
+  },
+  "titanium_Ti_6Al_4V": {
+    "name": "Titanium Ti-6Al-4V",
+    "category": "titanium",
+    "density": 4430,
+    "youngs_modulus": 113.8e9,
+    "poisson_ratio": 0.342,
+    "thermal_conductivity": 6.7,
+    "specific_heat": 526,
+    "thermal_expansion": 8.6e-6,
+    "yield_strength": 880e6,
+    "ultimate_strength": 950e6
+  },
+  "cast_iron_gray": {
+    "name": "Gray Cast Iron",
+    "category": "cast_iron",
+    "density": 7200,
+    "youngs_modulus": 100e9,
+    "poisson_ratio": 0.29,
+    "thermal_conductivity": 52,
+    "specific_heat": 490,
+    "thermal_expansion": 10.8e-6,
+    "yield_strength": null,
+    "ultimate_strength": 150e6
+  }
+}
