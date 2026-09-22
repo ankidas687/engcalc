@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-52%20passed-brightgreen)]()
+[![Tests](https://github.com/ankidas687/engcalc/actions/workflows/tests.yml/badge.svg)](https://github.com/ankidas687/engcalc/actions/workflows/tests.yml)
 [![PyPI](https://img.shields.io/badge/PyPI-coming%20soon-orange)]()
 
 `engcalc` is a pure-Python library for common Mechanical Engineering
