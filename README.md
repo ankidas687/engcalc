@@ -30,14 +30,6 @@ the spreadsheet mess.
 pip install engcalc
 ```
 
-> ⚠️ Not yet on PyPI. Install from source for now:
-
-```bash
-git clone https://github.com/ankidas687/engcalc.git
-cd engcalc
-pip install -e .
-```
-
 ## Quick Start
 
 ```python
