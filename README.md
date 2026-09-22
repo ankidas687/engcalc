@@ -8,9 +8,10 @@
 [![PyPI](https://img.shields.io/badge/PyPI-coming%20soon-orange)]()
 
 `engcalc` is a pure-Python library for common Mechanical Engineering
-calculations — thermodynamics, fluid mechanics, heat transfer, and
-material properties. Designed for students, engineers, and researchers
-who want clean, tested formulas without the spreadsheet mess.
+calculations — thermodynamics, fluid mechanics, heat transfer,
+material properties, and unit conversions. Designed for students,
+engineers, and researchers who want clean, tested formulas without
+the spreadsheet mess.
 
 ## Features
 
@@ -18,9 +19,10 @@ who want clean, tested formulas without the spreadsheet mess.
 - **Fluid Mechanics** — Reynolds number, Bernoulli, Darcy-Weisbach, pump power
 - **Heat Transfer** — conduction, convection, radiation, LMTD
 - **Materials Database** — 10 common engineering materials (steel, aluminum, copper, titanium, cast iron) with 8 properties each
+- **Unit Conversions** — 60+ units across 12 categories (length, mass, time, temperature, pressure, energy, power, force, area, volume, velocity, angle)
 - **SI units** throughout — no unit confusion
 - **Zero heavy dependencies** — only NumPy
-- **Fully type-hinted** and tested (52 tests passing)
+- **Fully type-hinted** and tested (91 tests passing)
 
 ## Installation
 
@@ -39,7 +41,7 @@ pip install -e .
 ## Quick Start
 
 ```python
-from engcalc import ideal_gas, cycles, fluids, heat, materials
+from engcalc import ideal_gas, cycles, fluids, heat, materials, units
 
 # Ideal gas law: PV = nRT
 P = ideal_gas.pressure(n=1, T=300, V=0.024)
@@ -60,6 +62,10 @@ print(f"Heat rate: {Q:.2f} W")            # 100000.00 W
 # Material property lookup
 rho = materials.get("steel_AISI_1040", "density")
 print(f"Steel density: {rho} kg/m^3")     # 7850 kg/m^3
+
+# Unit conversion
+temp_K = units.convert(100, "degC", "K")
+print(f"100 °C = {temp_K:.2f} K")         # 373.15 K
 ```
 
 ## Modules
@@ -71,6 +77,7 @@ print(f"Steel density: {rho} kg/m^3")     # 7850 kg/m^3
 | `engcalc.fluids` | `reynolds_number`, `flow_regime`, `bernoulli_pressure`, `darcy_weisbach_head_loss`, `pump_power` | Fluid mechanics |
 | `engcalc.heat` | `conduction_rate`, `convection_rate`, `radiation_rate`, `lmtd` | Heat transfer |
 | `engcalc.materials` | `get`, `get_all`, `list_materials`, `search`, `list_categories` | Material property database |
+| `engcalc.units` | `convert`, `list_categories`, `list_units`, `find_category` | Unit conversion utilities |
 
 ## Examples
 
@@ -81,6 +88,7 @@ Check the [`examples/`](examples/) folder for complete demo scripts:
 - `examples/fluids_demo.py` — Fluid mechanics
 - `examples/heat_demo.py` — Heat transfer
 - `examples/materials_demo.py` — Materials database
+- `examples/units_demo.py` — Unit conversions
 
 Run any demo:
 
@@ -124,7 +132,7 @@ calculation, feel free to:
 - [x] Fluid mechanics
 - [x] Heat transfer
 - [x] Materials database
-- [ ] Unit conversion utilities
+- [x] Unit conversion utilities
 - [ ] Mechanics of materials (stress, strain, beam)
 - [ ] Publish to PyPI
 
