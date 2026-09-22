@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "engcalc"
-version = "0.1.1"
+version = "0.1.2"
 description = "Mechanical Engineering calculations in Python"
 readme = "README.md"
 requires-python = ">=3.10"

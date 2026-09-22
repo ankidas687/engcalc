@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/ankidas687/engcalc/actions/workflows/tests.yml/badge.svg)](https://github.com/ankidas687/engcalc/actions/workflows/tests.yml)
-[![PyPI](https://img.shields.io/badge/PyPI-0.1.1-blue)](https://pypi.org/project/engcalc/)
+[![PyPI](https://img.shields.io/badge/PyPI-0.1.2-blue)](https://pypi.org/project/engcalc/)
 
 `engcalc` is a pure-Python library for common Mechanical Engineering
 calculations — thermodynamics, fluid mechanics, heat transfer,
@@ -126,7 +126,7 @@ calculation, feel free to:
 - [x] Materials database
 - [x] Unit conversion utilities
 - [ ] Mechanics of materials (stress, strain, beam)
-- [ ] Publish to PyPI
+- [x] Publish to PyPI
 
 ## License
 
